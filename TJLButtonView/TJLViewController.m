@@ -7,6 +7,7 @@
 //
 
 #import "TJLViewController.h"
+#import "TJLButtonView.h"
 
 @interface TJLViewController ()
 
@@ -14,16 +15,29 @@
 
 @implementation TJLViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
+- (IBAction)showButtonView:(UIButton *)sender {
+    NSArray *images = @[
+            [UIImage imageNamed:@"Redx"],
+            [UIImage imageNamed:@"Redx"],
+            [UIImage imageNamed:@"Redx"],
+            [UIImage imageNamed:@"Redx"],
+            [UIImage imageNamed:@"Redx"]
+    ];
+    NSArray *titles = @[@"1", @"2", @"3", @"4", @"5"];
+    TJLButtonView *tjlButtonView = [[TJLButtonView alloc]initWithView:self.view images:images buttonTitles:titles];
+    [tjlButtonView setButtonTappedBlock:^(TJLButtonView *buttonView, NSString *title) {
+        NSLog(@"%@", titles);
+    }];
+    [tjlButtonView setCloseButtonTappedBlock:^(TJLButtonView *buttonView, NSString *title) {
+        NSLog(@"%@", titles);
+    }];
+    [tjlButtonView show];
+
+}
 @end

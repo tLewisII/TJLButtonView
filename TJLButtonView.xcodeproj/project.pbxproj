@@ -18,6 +18,10 @@
 		DB7CAD8117C3CCCF00E00623 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7CAD8017C3CCCF00E00623 /* Default-568h@2x.png */; };
 		DB7CAD8417C3CCCF00E00623 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7CAD8217C3CCCF00E00623 /* MainStoryboard.storyboard */; };
 		DB7CAD8717C3CCCF00E00623 /* TJLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7CAD8617C3CCCF00E00623 /* TJLViewController.m */; };
+		DB7CAD9117C3CCED00E00623 /* Redx.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7CAD8D17C3CCED00E00623 /* Redx.png */; };
+		DB7CAD9217C3CCED00E00623 /* Redx@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7CAD8E17C3CCED00E00623 /* Redx@2x.png */; };
+		DB7CAD9317C3CCED00E00623 /* TJLButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7CAD9017C3CCED00E00623 /* TJLButtonView.m */; };
+		DB7CAD9717C3CEE200E00623 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7CAD9617C3CEE200E00623 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,11 @@
 		DB7CAD8317C3CCCF00E00623 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DB7CAD8517C3CCCF00E00623 /* TJLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJLViewController.h; sourceTree = "<group>"; };
 		DB7CAD8617C3CCCF00E00623 /* TJLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJLViewController.m; sourceTree = "<group>"; };
+		DB7CAD8D17C3CCED00E00623 /* Redx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Redx.png; path = TJLButtonView/Resources/Redx.png; sourceTree = "<group>"; };
+		DB7CAD8E17C3CCED00E00623 /* Redx@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Redx@2x.png"; path = "TJLButtonView/Resources/Redx@2x.png"; sourceTree = "<group>"; };
+		DB7CAD8F17C3CCED00E00623 /* TJLButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TJLButtonView.h; path = TJLButtonView/Source/TJLButtonView.h; sourceTree = "<group>"; };
+		DB7CAD9017C3CCED00E00623 /* TJLButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TJLButtonView.m; path = TJLButtonView/Source/TJLButtonView.m; sourceTree = "<group>"; };
+		DB7CAD9617C3CEE200E00623 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7CAD9717C3CEE200E00623 /* QuartzCore.framework in Frameworks */,
 				DB7CAD6B17C3CCCF00E00623 /* UIKit.framework in Frameworks */,
 				DB7CAD6D17C3CCCF00E00623 /* Foundation.framework in Frameworks */,
 				DB7CAD6F17C3CCCF00E00623 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +83,7 @@
 		DB7CAD6917C3CCCF00E00623 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB7CAD9617C3CEE200E00623 /* QuartzCore.framework */,
 				DB7CAD6A17C3CCCF00E00623 /* UIKit.framework */,
 				DB7CAD6C17C3CCCF00E00623 /* Foundation.framework */,
 				DB7CAD6E17C3CCCF00E00623 /* CoreGraphics.framework */,
@@ -83,6 +94,8 @@
 		DB7CAD7017C3CCCF00E00623 /* TJLButtonView */ = {
 			isa = PBXGroup;
 			children = (
+				DB7CAD9517C3CDC100E00623 /* Resources */,
+				DB7CAD9417C3CDB800E00623 /* Source */,
 				DB7CAD7917C3CCCF00E00623 /* TJLAppDelegate.h */,
 				DB7CAD7A17C3CCCF00E00623 /* TJLAppDelegate.m */,
 				DB7CAD8217C3CCCF00E00623 /* MainStoryboard.storyboard */,
@@ -105,6 +118,26 @@
 				DB7CAD8017C3CCCF00E00623 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB7CAD9417C3CDB800E00623 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DB7CAD8F17C3CCED00E00623 /* TJLButtonView.h */,
+				DB7CAD9017C3CCED00E00623 /* TJLButtonView.m */,
+			);
+			name = Source;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DB7CAD9517C3CDC100E00623 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB7CAD8D17C3CCED00E00623 /* Redx.png */,
+				DB7CAD8E17C3CCED00E00623 /* Redx@2x.png */,
+			);
+			name = Resources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +197,8 @@
 				DB7CAD7F17C3CCCF00E00623 /* Default@2x.png in Resources */,
 				DB7CAD8117C3CCCF00E00623 /* Default-568h@2x.png in Resources */,
 				DB7CAD8417C3CCCF00E00623 /* MainStoryboard.storyboard in Resources */,
+				DB7CAD9117C3CCED00E00623 /* Redx.png in Resources */,
+				DB7CAD9217C3CCED00E00623 /* Redx@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +212,7 @@
 				DB7CAD7717C3CCCF00E00623 /* main.m in Sources */,
 				DB7CAD7B17C3CCCF00E00623 /* TJLAppDelegate.m in Sources */,
 				DB7CAD8717C3CCCF00E00623 /* TJLViewController.m in Sources */,
+				DB7CAD9317C3CCED00E00623 /* TJLButtonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
