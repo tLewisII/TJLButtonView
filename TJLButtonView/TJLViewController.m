@@ -32,10 +32,10 @@
     NSArray *titles = @[@"1", @"2", @"3", @"4", @"5"];
     TJLButtonView *tjlButtonView = [[TJLButtonView alloc]initWithView:self.view images:images buttonTitles:titles];
     [tjlButtonView setButtonTappedBlock:^(TJLButtonView *buttonView, NSString *title) {
-        NSLog(@"%@", titles);
+        NSLog(@"%@", title);
     }];
     [tjlButtonView setCloseButtonTappedBlock:^(TJLButtonView *buttonView, NSString *title) {
-        NSLog(@"%@", titles);
+        NSLog(@"%@", title);
     }];
     [tjlButtonView show];
 
