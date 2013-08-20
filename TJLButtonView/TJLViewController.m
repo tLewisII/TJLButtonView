@@ -23,11 +23,11 @@
 
 - (IBAction)showButtonView:(UIButton *)sender {
     NSArray *images = @[
-            [UIImage imageNamed:@"Redx"],
-            [UIImage imageNamed:@"Redx"],
-            [UIImage imageNamed:@"Redx"],
-            [UIImage imageNamed:@"Redx"],
-            [UIImage imageNamed:@"Redx"]
+            [UIImage imageNamed:@"Yellow"],
+            [UIImage imageNamed:@"Blue"],
+            [UIImage imageNamed:@"Green"],
+            [UIImage imageNamed:@"Purple"],
+            [UIImage imageNamed:@"Orange"]
     ];
     NSArray *titles = @[@"1", @"2", @"3", @"4", @"5"];
     TJLButtonView *tjlButtonView = [[TJLButtonView alloc]initWithView:self.view images:images buttonTitles:titles];
