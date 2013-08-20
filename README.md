@@ -1,7 +1,7 @@
 <h1>TJLButtonView</h1>
 A view with buttons arranged in a circle pattern that animate out from the center.
-![Two Buttons](http://ploverproductions.com/images/TJLButtonView5Buttons.png?raw=true)&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![One Buttons](http://ploverproductions.com/images/TJLButtonView3Buttons.png?raw=true)
+![Two Buttons](http://ploverproductions.com/images/TJLButtonView5.png?raw=true)&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![One Buttons](http://ploverproductions.com/images/TJLButtonView3.png?raw=true)
 <h2>Installation</h2>
 <hr>
 [Cocoapods](http://www.cocoapods.org) support is forth coming, in the meantime, just grab the source folder and drop it into your project and include the QuartzCore framework.

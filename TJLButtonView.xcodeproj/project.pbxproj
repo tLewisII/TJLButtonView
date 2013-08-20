@@ -56,16 +56,16 @@
 		DB7CAD8F17C3CCED00E00623 /* TJLButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TJLButtonView.h; path = TJLButtonView/Source/TJLButtonView.h; sourceTree = "<group>"; };
 		DB7CAD9017C3CCED00E00623 /* TJLButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TJLButtonView.m; path = TJLButtonView/Source/TJLButtonView.m; sourceTree = "<group>"; };
 		DB7CAD9617C3CEE200E00623 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		DBE8358817C3F3D2001AC888 /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
-		DBE8358917C3F3D2001AC888 /* Blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue@2x.png"; sourceTree = "<group>"; };
-		DBE8358A17C3F3D2001AC888 /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
-		DBE8358B17C3F3D2001AC888 /* Green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green@2x.png"; sourceTree = "<group>"; };
-		DBE8358C17C3F3D2001AC888 /* Orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orange.png; sourceTree = "<group>"; };
-		DBE8358D17C3F3D2001AC888 /* Orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange@2x.png"; sourceTree = "<group>"; };
-		DBE8358E17C3F3D2001AC888 /* Purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Purple.png; sourceTree = "<group>"; };
-		DBE8358F17C3F3D2001AC888 /* Purple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple@2x.png"; sourceTree = "<group>"; };
-		DBE8359017C3F3D2001AC888 /* Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow.png; sourceTree = "<group>"; };
-		DBE8359117C3F3D2001AC888 /* Yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow@2x.png"; sourceTree = "<group>"; };
+		DBE8358817C3F3D2001AC888 /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Blue.png; path = TJLButtonView/Resources/Blue.png; sourceTree = "<group>"; };
+		DBE8358917C3F3D2001AC888 /* Blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Blue@2x.png"; path = "TJLButtonView/Resources/Blue@2x.png"; sourceTree = "<group>"; };
+		DBE8358A17C3F3D2001AC888 /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Green.png; path = TJLButtonView/Resources/Green.png; sourceTree = "<group>"; };
+		DBE8358B17C3F3D2001AC888 /* Green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Green@2x.png"; path = "TJLButtonView/Resources/Green@2x.png"; sourceTree = "<group>"; };
+		DBE8358C17C3F3D2001AC888 /* Orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Orange.png; path = TJLButtonView/Resources/Orange.png; sourceTree = "<group>"; };
+		DBE8358D17C3F3D2001AC888 /* Orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Orange@2x.png"; path = "TJLButtonView/Resources/Orange@2x.png"; sourceTree = "<group>"; };
+		DBE8358E17C3F3D2001AC888 /* Purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Purple.png; path = TJLButtonView/Resources/Purple.png; sourceTree = "<group>"; };
+		DBE8358F17C3F3D2001AC888 /* Purple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Purple@2x.png"; path = "TJLButtonView/Resources/Purple@2x.png"; sourceTree = "<group>"; };
+		DBE8359017C3F3D2001AC888 /* Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Yellow.png; path = TJLButtonView/Resources/Yellow.png; sourceTree = "<group>"; };
+		DBE8359117C3F3D2001AC888 /* Yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Yellow@2x.png"; path = "TJLButtonView/Resources/Yellow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
