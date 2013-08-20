@@ -4,7 +4,7 @@ A view with buttons arranged in a circle pattern that animate out from the cente
 ![One Buttons](http://ploverproductions.com/images/TJLButtonView3Buttons.png?raw=true)
 <h2>Installation</h2>
 <hr>
-[Cocoapods](www.cocoapods.org) support is forth coming, in the meantime, just grab the source folder and drop it into your project and include the QuartzCore framework.
+[Cocoapods](http://www.cocoapods.org) support is forth coming, in the meantime, just grab the source folder and drop it into your project and include the QuartzCore framework.
 <h2>Usage</h2>
 <hr>
 `+initWithView:images:buttonTitles:`<br>
