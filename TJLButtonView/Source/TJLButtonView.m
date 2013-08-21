@@ -105,7 +105,24 @@
                                 multiplier:1.0
                                   constant:0]
         ]];
-
+        [self.closeButton addConstraints:@[
+                [NSLayoutConstraint
+                        constraintWithItem:self.closeButton
+                                 attribute:NSLayoutAttributeWidth
+                                 relatedBy:NSLayoutRelationLessThanOrEqual
+                                    toItem:nil
+                                 attribute:NSLayoutAttributeNotAnAttribute
+                                multiplier:1.0
+                                  constant:60],
+                [NSLayoutConstraint
+                        constraintWithItem:self.closeButton
+                                 attribute:NSLayoutAttributeHeight
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:self.closeButton
+                                 attribute:NSLayoutAttributeWidth
+                                multiplier:1.0
+                                  constant:0]
+        ]];
         self.buttonArray = [NSMutableArray new];
         for(NSUInteger i = 0; i < images.count; i++) {
             UIButton *b = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -115,6 +132,24 @@
             [b addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
             [self.buttonContainer addSubview:b];
             [self.buttonArray addObject:b];
+            [b addConstraints:@[
+                    [NSLayoutConstraint
+                            constraintWithItem:b
+                                     attribute:NSLayoutAttributeWidth
+                                     relatedBy:NSLayoutRelationLessThanOrEqual
+                                        toItem:nil
+                                     attribute:NSLayoutAttributeNotAnAttribute
+                                    multiplier:1.0
+                                      constant:60],
+                    [NSLayoutConstraint
+                            constraintWithItem:b
+                                     attribute:NSLayoutAttributeHeight
+                                     relatedBy:NSLayoutRelationEqual
+                                        toItem:b
+                                     attribute:NSLayoutAttributeWidth
+                                    multiplier:1.0
+                                      constant:0]
+            ]];
         }
 
         for(NSUInteger i = 0; i < images.count; i++) {
