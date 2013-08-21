@@ -10,12 +10,16 @@ A view with buttons arranged in a circle pattern that animate out from the cente
 `+initWithView:images:buttonTitles:`<br>
 `-setButtonTappedBlock:`<br>
 `-show`<br>
-and thats it!<br>
+**and thats it!**
+
 Currently the view only supports up to five images, and it works best with 3 or 5, but can work with just 2.
+
 The button titles are set for the buttons `disabled` state, and are only used to let you know which button was tapped,
 so button titles should follow their purpose, as you will get sent the title of the tapped button.
 There is also a method for getting notified when the close button is tapped, `setCloseButtonTappedBlock:`, 
 or if you prefer, you can use delgate methods instead of blocks.
+
+Auto layout is also used, so all interface orientations and rotations are supported.
 <br><br>
 
 
