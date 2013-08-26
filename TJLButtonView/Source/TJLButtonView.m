@@ -82,7 +82,6 @@
 
         self.closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
         self.closeButton.translatesAutoresizingMaskIntoConstraints = NO;
-        [self.closeButton setImage:[UIImage imageNamed:@"Redx"] forState:UIControlStateNormal];
         [self.closeButton setTitle:@"Close" forState:UIControlStateDisabled];
         [self.closeButton addTarget:self action:@selector(closeView:) forControlEvents:UIControlEventTouchUpInside];
         [self.buttonContainer addSubview:self.closeButton];
@@ -166,6 +165,10 @@
         }
     }
     return self;
+}
+
+-(void)setCloseButtonImage:(UIImage *)image {
+    [self.closeButton setImage:image forState:UIControlStateNormal];
 }
 
 - (void)setButtonTappedBlock:(TJLButtonTappedBlock)block {

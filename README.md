@@ -8,6 +8,7 @@ A view with buttons arranged in a circle pattern that animate out from the cente
 <h2>Usage</h2>
 <hr>
 `+initWithView:images:buttonTitles:`<br>
+`-setCloseButtonImage:`<br>
 `-setButtonTappedBlock:`<br>
 `-show`<br>
 **and thats it!**

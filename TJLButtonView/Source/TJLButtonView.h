@@ -55,14 +55,20 @@ typedef void (^TJLButtonTappedBlock)(TJLButtonView *buttonView, NSString *title)
 - (instancetype)initWithView:(UIView *)view images:(NSArray *)images buttonTitles:(NSArray *)titles;
 
 /**
+ *  Sets the image for the "Close" button in the center of the view. Required.
+ *@param image The image used for the "Close" button.
+ */
+-(void)setCloseButtonImage:(UIImage *)image;
+
+/**
  * A block that is called each time a button is tapped.
- @param block The block that will be called when a button is tapped.
+ *@param block The block that will be called when a button is tapped.
  */
 - (void)setButtonTappedBlock:(TJLButtonTappedBlock)block;
 
 /**
  * A block that is called when the close button is tapped
- @param block The block that will be called when a button is tapped.
+ *@param block The block that will be called when a button is tapped.
  */
 - (void)setCloseButtonTappedBlock:(TJLButtonTappedBlock)block;
 
