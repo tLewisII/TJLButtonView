@@ -8,8 +8,9 @@
 #define center(a) CGPointMake(CGRectGetMinX(a) + 125, CGRectGetMinY(a) + 125)
 
 #import <QuartzCore/QuartzCore.h>
+#import <objc/runtime.h>
 #import "TJLButtonView.h"
-
+static char key = 'b';
 @interface TJLButtonView () {
     TJLButtonTappedBlock buttonTappedBlock;
     TJLButtonTappedBlock closeBlock;
@@ -127,7 +128,7 @@
             UIButton *b = [UIButton buttonWithType:UIButtonTypeCustom];
             b.translatesAutoresizingMaskIntoConstraints = NO;
             [b setImage:images[i] forState:UIControlStateNormal];
-            [b setTitle:titles[i] forState:UIControlStateDisabled];
+            objc_setAssociatedObject(b, &key, titles[i], OBJC_ASSOCIATION_ASSIGN);
             [b addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
             [self.buttonContainer addSubview:b];
             [self.buttonArray addObject:b];
@@ -226,7 +227,7 @@
 }
 
 - (void)buttonTapped:(UIButton *)sender {
-    NSString *title = [sender titleForState:UIControlStateDisabled];
+    NSString *title = objc_getAssociatedObject(sender, &key);
     if([self.delegate respondsToSelector:@selector(buttonView:titleForTappedButton:)]) [self.delegate buttonView:self titleForTappedButton:title];
     if(buttonTappedBlock) buttonTappedBlock(self, title);
 }

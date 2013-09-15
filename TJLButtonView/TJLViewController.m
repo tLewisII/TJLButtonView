@@ -29,7 +29,7 @@
             [UIImage imageNamed:@"Purple"],
             [UIImage imageNamed:@"Orange"]
     ];
-    NSArray *titles = @[@"1", @"2", @"3", @"4", @"5"];
+    NSArray *titles = @[@"Yellow", @"Blue", @"Green", @"Purple", @"Orange"];
     TJLButtonView *tjlButtonView = [[TJLButtonView alloc]initWithView:self.view images:images buttonTitles:titles];
     [tjlButtonView setCloseButtonImage:[UIImage imageNamed:@"Redx"]];
     [tjlButtonView setButtonTappedBlock:^(TJLButtonView *buttonView, NSString *title) {
