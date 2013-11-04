@@ -76,6 +76,6 @@ typedef void (^TJLButtonTappedBlock)(TJLButtonView *buttonView, NSString *title)
 - (void)show;
 
 ///The delegate
-@property(strong, nonatomic) id <TJLButtonViewDelegate> delegate;
+@property(weak, nonatomic) id <TJLButtonViewDelegate> delegate;
 @end
 

@@ -83,7 +83,7 @@ static char key = 'b';
 
         self.closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
         self.closeButton.translatesAutoresizingMaskIntoConstraints = NO;
-        [self.closeButton setTitle:@"Close" forState:UIControlStateDisabled];
+        objc_setAssociatedObject(self.closeButton, &key, @"Close", OBJC_ASSOCIATION_ASSIGN);
         [self.closeButton addTarget:self action:@selector(closeView:) forControlEvents:UIControlEventTouchUpInside];
         [self.buttonContainer addSubview:self.closeButton];
         [self.buttonContainer addConstraints:@[
@@ -228,13 +228,15 @@ static char key = 'b';
 
 - (void)buttonTapped:(UIButton *)sender {
     NSString *title = objc_getAssociatedObject(sender, &key);
-    if([self.delegate respondsToSelector:@selector(buttonView:titleForTappedButton:)]) [self.delegate buttonView:self titleForTappedButton:title];
+    id<TJLButtonViewDelegate>strongDelegate = self.delegate;
+    if([strongDelegate respondsToSelector:@selector(buttonView:titleForTappedButton:)]) [strongDelegate buttonView:self titleForTappedButton:title];
     if(buttonTappedBlock) buttonTappedBlock(self, title);
 }
 
 - (void)closeView:(UIButton *)sender {
-    NSString *title = [sender titleForState:UIControlStateDisabled];
-    if([self.delegate respondsToSelector:@selector(buttonView:closeButtonTapped:)]) [self.delegate buttonView:self closeButtonTapped:title];
+    NSString *title = objc_getAssociatedObject(sender, &key);
+    id<TJLButtonViewDelegate>strongDelegate = self.delegate;
+    if([strongDelegate respondsToSelector:@selector(buttonView:closeButtonTapped:)]) [strongDelegate buttonView:self closeButtonTapped:title];
     if(closeBlock) closeBlock(self, title);
 
     [self setupCloseBezierPaths];
